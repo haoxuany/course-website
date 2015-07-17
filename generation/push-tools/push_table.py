@@ -93,7 +93,7 @@ if __name__ == "__main__":
             print FS("<!-- Schedule -->")
             print FS(table)
         else:
-            print line
+            print line,
             indent = len(line) - len(line.lstrip())
 
     template_file.close()

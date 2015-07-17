@@ -86,7 +86,7 @@ if __name__ == "__main__":
             print FS("<!-- Announcements -->")
             print FS(announcements)
         else:
-            print line
+            print line,
             indent = len(line) - len(line.lstrip())
 
     template_file.close()
