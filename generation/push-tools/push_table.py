@@ -66,6 +66,9 @@ def construct_table(table_file):
         for i in xrange(len(item_set)):
             item_set[i] = item_set[i].strip()
 
+        if item_set == ['']:
+            continue
+
         if re.search("part", item_set[0]):
             table += row_part.format(topicname=item_set[1])
 
@@ -79,8 +82,9 @@ def construct_table(table_file):
 
 if __name__ == "__main__":
     template_file = fileinput.input()
-    schedule_filepath = os.path.join(os.path.abspath(__file__),
-                                     "../data/schedule.table")
+    schedule_filepath = os.path.join(
+        os.path.split(os.path.abspath(__file__))[0],
+        "../data/schedule.table")
 
     for line in template_file:
         # has <!-- Schedule something, replace it with comment + table
