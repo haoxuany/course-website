@@ -12,7 +12,6 @@ head = \
 <table id="schedule">
     <thead>
         <tr id="heading">
-            <th>#</th>
             <th>Date</th>
             <th>Lecture</th>
         </tr>
@@ -89,7 +88,7 @@ if __name__ == "__main__":
     for line in template_file:
         # has <!-- Schedule something, replace it with comment + table
         if re.search("<!--", line) and re.search("Schedule", line):
-            table = construct_table(schedule_filepath)
+            table = construct_table(open(schedule_filepath, "r"))
             print FS("<!-- Schedule -->")
             print FS(table)
         else:
