@@ -69,7 +69,7 @@ def sub_date(filepath):
     txt = open(filepath, "r").read()
     open(filepath, "w").write(txt.replace('\\today',
                                           datetime.datetime.today().strftime(
-                                              "%B %-d %-I:%M %p")))
+                                              "%B %d %I:%M %p")))
 
 if __name__ == "__main__":
     template_file = fileinput.input()
