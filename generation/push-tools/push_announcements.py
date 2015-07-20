@@ -27,7 +27,7 @@ single_announce = \
 def IND(str, ind=1):
     str_list = str.split("\n")
     for line_num in xrange(len(str_list)):
-        str_list[line_num] = "\t" * ind + str_list[line_num]
+        str_list[line_num] = "  " * ind + str_list[line_num]
 
     return "\n".join(str_list)
 

@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>98-277: Vim</title>
-	</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>98-277: Vim</title>
+  </head>
 
-	<body>
-		<h1>98-277 The Vim Editor: Philosophy, Principles and Practice</h1>
-		<p>Under Construction </p>
+  <body>
+    <h1>98-277 The Vim Editor: Philosophy, Principles and Practice</h1>
+    <p>Under Construction </p>
 
-		<h2>Lectures</h2>
-		<p>Mondays 6:30PM ~ 7:20PM</p>
-		<p>Scaife Hall 214</p>
+    <h2>Lectures</h2>
+    <p>Mondays 6:30PM ~ 7:20PM</p>
+    <p>Scaife Hall 214</p>
 
-		<h2>Announcements</h2>
-		<!-- Announcements -->
+    <h2>Announcements</h2>
+    <!-- Announcements -->
 
-		<h2>Course Schedule</h2>
-		<p><i>(Lecture content is subject to change)</i></p>
-		<!-- Schedule -->		
-		
-		<h2>Course Policy</h2>
-		<p> There will be a total of 5 homeworks and 2 exams</p>
-		<ul>
-			<li>Homeworks: 40% (8% of final score per homework)</li>
-			<li>Midterm: 30%</li>
-			<li>Final: 30%</li>
-		</ul>
-		<p>A total of at least <b>60%</b> is required to pass the course! <br>
-		The homeworks are designed as application drills of concepts in lectures. <br>
-		In addition to that, as per StuCo policy, you cannot miss more than <b>2</b>
-		lectures! Missing more than 15 mins of class counts as half-absent, since there 
-		are only 50mins of content per lecture.</p>
+    <h2>Course Schedule</h2>
+    <p><i>(Lecture content is subject to change)</i></p>
+    <!-- Schedule -->
 
-		<footer>
-			<h2>Contact</h2>
-			<p>Haoxuan "Aaron" Yue (plz call me Aaron)</p>
-			<p><a href="mailto:haoxuany@andrew.cmu.edu">haoxuany@andrew.cmu.edu</a></p>
-		</footer>
-	</body>
+    <h2>Course Policy</h2>
+    <p> There will be a total of 5 homeworks and 2 exams</p>
+    <ul>
+      <li>Homeworks: 40% (8% of final score per homework)</li>
+      <li>Midterm: 30%</li>
+      <li>Final: 30%</li>
+    </ul>
+    <p>A total of at least <b>60%</b> is required to pass the course! <br>
+    The homeworks are designed as application drills of concepts in lectures. <br>
+    In addition to that, as per StuCo policy, you cannot miss more than <b>2</b>
+    lectures! Missing more than 15 mins of class counts as half-absent, since there
+    are only 50mins of content per lecture.</p>
+
+    <footer>
+      <h2>Contact</h2>
+      <p>Haoxuan "Aaron" Yue (plz call me Aaron)</p>
+      <p><a href="mailto:haoxuany@andrew.cmu.edu">haoxuany@andrew.cmu.edu</a></p>
+    </footer>
+  </body>
 </html>
-
