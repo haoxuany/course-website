@@ -1,0 +1,117 @@
+/* high-level */
+.container {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0px;
+
+  background-color: rgba(68, 79, 227, 0.02);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.8em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+li {
+  margin: 1em 0 1em 1em;
+}
+
+/* high-level boxes */
+.container > * {
+  margin: 20px 18px;
+}
+
+/* header */
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* sections */
+section h2,
+footer h2 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+
+  border-bottom: 3px solid rgb(68, 79, 227);
+}
+
+/* flexbox */
+.announce-container {
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  background-color: rgba(68, 79, 227, 0.1);
+}
+
+.announce-container > div {
+  margin: 5px 0px;
+}
+
+.announce-topic {
+  text-align: left;
+  flex: 2 1;
+  font-size: 1.2em;
+}
+
+.announce-date {
+  text-align: right;
+  flex: 1 1;
+}
+
+.announce-content {
+  flex: 1 100%;
+  text-align: left;
+}
+
+/* tables */
+table {
+  margin: 30px auto 0px auto;
+}
+
+td,
+th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 10px;
+}
+
+thead {
+  font-size: 1.15em;
+  background-color: rgba(68, 79, 227, 0.50);
+}
+
+.lecture-row {
+  background-color: rgba(68, 79, 227, 0.1);
+}
+
+.lecture-row > td:first-child {
+  border-right: 3px solid rgba(68, 79, 227, 0.50);
+}
+
+.part-row {
+  background-color: rgba(68, 79, 227, 0.2);
+}

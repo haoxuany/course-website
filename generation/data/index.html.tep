@@ -1,44 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>98-277: Vim</title>
   </head>
 
   <body>
-    <h1>98-277 The Vim Editor: Philosophy, Principles and Practice</h1>
-    <p>Under Construction </p>
+    <div class="container">
+      <header>
+        <h1>98-277</h1>
+        <h1>The Vim Editor: Philosophy, Principles and Practice</h1>
+        <p>Under Construction</p>
+      </header>
+      
+      <section>
+        <h2>Lectures</h2>
+        <p>Mondays 6:30PM ~ 7:20PM
+        <br>Scaife Hall 214</p>
+      </section>
 
-    <h2>Lectures</h2>
-    <p>Mondays 6:30PM ~ 7:20PM</p>
-    <p>Scaife Hall 214</p>
+      <section>
+        <h2>Announcements</h2>
+        <!-- Announcements -->
+      </section>
 
-    <h2>Announcements</h2>
-    <!-- Announcements -->
+      <section>
+        <h2>Course Schedule</h2>
+        <p><em>(Lecture content is subject to change)</em></p>
+        <!-- Schedule -->
+      </section>
 
-    <h2>Course Schedule</h2>
-    <p><i>(Lecture content is subject to change)</i></p>
-    <!-- Schedule -->
+      <section>
+        <h2>Course Policy</h2>
+        <p> There will be a total of 5 homeworks and 2 exams.</p>
+        <ul>
+          <li>Homeworks: 40% (8% of final score per homework)</li>
+          <li>Midterm: 30%</li>
+          <li>Final: 30%</li>
+        </ul>
+        <p>A total of at least <strong>60%</strong> is required to pass the course!</p>
+        <p>
+          The homeworks are designed as application drills of concepts in lectures.<br>
+          In addition to that, as per StuCo policy, you cannot miss more than <strong>2</strong>
+          lectures! Missing more than 15 mins of class counts as half-absent, since there
+          are only 50mins of content per lecture.
+        </p>
+      </section>
 
-    <h2>Course Policy</h2>
-    <p> There will be a total of 5 homeworks and 2 exams</p>
-    <ul>
-      <li>Homeworks: 40% (8% of final score per homework)</li>
-      <li>Midterm: 30%</li>
-      <li>Final: 30%</li>
-    </ul>
-    <p>A total of at least <b>60%</b> is required to pass the course! <br>
-    The homeworks are designed as application drills of concepts in lectures. <br>
-    In addition to that, as per StuCo policy, you cannot miss more than <b>2</b>
-    lectures! Missing more than 15 mins of class counts as half-absent, since there
-    are only 50mins of content per lecture.</p>
-
-    <footer>
-      <h2>Contact</h2>
-      <p>Haoxuan "Aaron" Yue (plz call me Aaron)</p>
-      <p><a href="mailto:haoxuany@andrew.cmu.edu">haoxuany@andrew.cmu.edu</a></p>
-    </footer>
+      <footer>
+        <h2>Contact</h2>
+        <p>Haoxuan "Aaron" Yue (plz call me Aaron)</p>
+        <p><a href="mailto:haoxuany@andrew.cmu.edu">haoxuany@andrew.cmu.edu</a></p>
+      </footer>
+    </div>
   </body>
 </html>

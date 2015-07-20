@@ -9,12 +9,12 @@ import fileinput
 indent = 0
 head = \
 '''
-<table id="schedule">
+<table>
     <thead>
-        <tr id="heading">
-            <th>Date</th>
-            <th>Lecture</th>
-        </tr>
+      <tr>
+        <th>Date</th>
+        <th>Lecture</th>
+      </tr>
     </thead>
     <tbody>
 {tablebody}
@@ -23,15 +23,15 @@ head = \
 '''
 row_lecture = \
 '''
-<tr class="lecture">
-    <td>{date}</td>
-    <td>{lecturename}</td>
+<tr class="lecture-row">
+  <td>{date}</td>
+  <td>{lecturename}</td>
 </tr>
 '''
 row_part = \
 '''
-<tr class="part">
-    <th colspan="2">{topicname}</th>
+<tr class="part-row">
+  <th colspan="2">{topicname}</th>
 </tr>
 '''
 

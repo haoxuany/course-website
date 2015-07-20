@@ -9,17 +9,19 @@ import fileinput
 indent = 0
 announce = \
 '''
-<div id="announcement_bar">
+<ul>
 {announce_body}
-</div>
+</ul>
 '''
 single_announce = \
 '''
-<div class="topic">{topic}</div>
-<div class="date">{date}</div>
-<div class="content">
-{content}
-</div>
+<li class="announce-container">
+  <div class="announce-topic">{topic}</div>
+  <div class="announce-date">{date}</div>
+  <div class="announce-content">
+    {content}
+  </div>
+</li>
 '''
 
 
