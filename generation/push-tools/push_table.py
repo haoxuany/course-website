@@ -60,7 +60,33 @@ def construct_table(table_file):
 
     global head, row_lecture, row_part
 
+    table_list = []
+    last_concat = False
+
     for line in table_file:
+        this_concat = last_concat
+        line = line.strip()
+        if line == '':
+            continue
+        if line[0] == '#':
+            continue
+        if line.endswith('\\'):
+            if line == '\\':
+                continue
+            if line.endswith('\\\\'):
+                line = line.rstrip('\\\\') + '<br/>'
+            else:
+                line = line.rstrip('\\')
+            last_concat = True
+        else:
+            last_concat = False
+
+        if this_concat:
+            table_list[-1] += line
+        else:
+            table_list.append(line)
+
+    for line in table_list:
         item_set = line.strip().split("|")
         for i in xrange(len(item_set)):
             item_set[i] = item_set[i].strip()

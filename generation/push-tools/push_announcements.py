@@ -48,8 +48,34 @@ def construct_announcements(announcement_file):
 
     global announce, single_announce
 
+    announce_list = []
+    last_concat = False
+
     for line in announcement_file:
-        item_set = line.strip().split("|")
+        this_concat = last_concat
+        line = line.strip()
+        if line == '':
+            continue
+        if line[0] == '#':
+            continue
+        if line.endswith('\\'):
+            if line == '\\':
+                continue
+            if line.endswith('\\\\'):
+                line = line.rstrip('\\\\') + '<br/>'
+            else:
+                line = line.rstrip('\\')
+            last_concat = True
+        else:
+            last_concat = False
+
+        if this_concat:
+            announce_list[-1] += line
+        else:
+            announce_list.append(line)
+
+    for line in announce_list:
+        item_set = line.split("|")
         for i in xrange(len(item_set)):
             item_set[i] = item_set[i].strip()
 
@@ -58,18 +84,18 @@ def construct_announcements(announcement_file):
 
         # Always insert new announcements first
         # Assume new announcements are written on top of file
-        announcements = single_announce.format(topic=item_set[0],
+        announcements += single_announce.format(topic=item_set[0],
                                                date=item_set[1],
                                                content=IND(item_set[2])) \
-            + announcements
 
     return announce.format(announce_body=IND(announcements))
+
 
 def sub_date(filepath):
     txt = open(filepath, "r").read()
     open(filepath, "w").write(txt.replace('\\today',
                                           datetime.datetime.today().strftime(
-                                              "%B %-d %-I:%M %p")))
+                                              "%B %d %I:%M %p")))
 
 if __name__ == "__main__":
     template_file = fileinput.input()
